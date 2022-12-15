@@ -520,6 +520,27 @@
           </svg>
         </button>
         <b class="modal-title">Залиште свої дані, ми вам передзвонимо</b>
+
+        <form class="modal-form">
+          <div class="form-field">
+            <label class="modal-label" for="user user-name">Ім'я</label>
+            <input class="modal-input" type="text" name="name" id="user-name"></div>
+          <div class="form-field">
+            <label class="modal-label" for="user user-phone">Телефон</label>
+            <input class="modal-input" type="tel" name="phone" id="user-phone"></div>
+          <div class="form-field">
+            <label class="modal-label" for="user user-mail">Пошта</label>
+            <input class="modal-input" type="email" name="mail" id="user-mail"></div>
+          <div class="form-field">
+            <label class="modal-label" for="user modal-comment">Коментар</label>
+            <textarea class="modal-checkbox" name="comment" id="modal-comment" cols="30" rows="10" placeholder="Введіть коментар"></textarea></div>
+            <div class="form-checkbox">
+              <input type="checkbox" name="consent" value="consent" id="consent">
+            <label class="modal-label" for="consent">Погоджуюся з розсилкою та приймаю</label>
+            <a class="contract" href="">Умови договору</a>
+            </div>
+        </form>
+
       </div>
     </div>
     <script src="./js/modal.js"></script>
