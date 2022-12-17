@@ -504,12 +504,21 @@
         </div>
         <form class="subscribe">
           <div class="form-subscribe">
-          <label class="form-label" for="subscribe">Підпишіться на розсилку</label>
-          <input class="form-input" type="email" name="subscribe" id="subscribe" placeholder="E-mail"/>
+            <label class="form-label" for="subscribe">Підпишіться на розсилку</label>
+            <input
+              class="form-input"
+              type="email"
+              name="subscribe"
+              id="subscribe"
+              placeholder="E-mail"
+            />
           </div>
-          <button class="sub-btn" type="submit">Підписатися<svg class="icon-send"><use href="./imeges/sprite.svg#icon-icon-send"></use></svg></button>
-          
-        </form
+          <button class="sub-btn" type="submit">
+            Підписатися<svg class="icon-send">
+              <use href="./imeges/sprite.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -519,28 +528,48 @@
             <use href="./imeges/sprite.svg#icon-close-black"></use>
           </svg>
         </button>
+
         <b class="modal-title">Залиште свої дані, ми вам передзвонимо</b>
 
         <form class="modal-form">
           <div class="form-field">
             <label class="modal-label" for="user user-name">Ім'я</label>
-            <input class="modal-input" type="text" name="name" id="user-name"></div>
+            <input class="modal-input" type="text" name="name" id="user-name" />
+          </div>
           <div class="form-field">
             <label class="modal-label" for="user user-phone">Телефон</label>
-            <input class="modal-input" type="tel" name="phone" id="user-phone"></div>
+            <input class="modal-input" type="tel" name="phone" id="user-phone" />
+          </div>
           <div class="form-field">
             <label class="modal-label" for="user user-mail">Пошта</label>
-            <input class="modal-input" type="email" name="mail" id="user-mail"></div>
+            <input class="modal-input" type="email" name="mail" id="user-mail" />
+          </div>
           <div class="form-field">
             <label class="modal-label" for="user modal-comment">Коментар</label>
-            <textarea class="modal-checkbox" name="comment" id="modal-comment" cols="30" rows="10" placeholder="Введіть коментар"></textarea></div>
-            <div class="form-checkbox">
-              <input type="checkbox" name="consent" value="consent" id="consent">
-            <label class="modal-label" for="consent">Погоджуюся з розсилкою та приймаю</label>
-            <a class="contract" href="">Умови договору</a>
-            </div>
+            <textarea
+              class="modal-textarea"
+              name="comment"
+              id="modal-comment"
+              cols="30"
+              rows="10"
+              placeholder="Введіть коментар"
+            ></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="consent"
+              value="consent"
+              id="consent"
+            />
+            <label class="checkbox-label" for="consent"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="contract" href="">Умови договору</a></label
+            >
+          </div>
+          <button class="modal-btn" type="submit">Відправити</button>
         </form>
-
       </div>
     </div>
     <script src="./js/modal.js"></script>
