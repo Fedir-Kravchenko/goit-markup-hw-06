@@ -900,7 +900,7 @@ body {
 
 .form-checkbox {
   display: inline-block;
-  outline: 1px solid skyblue;
+  padding-left: 23px;
 }
 
 .contract {
@@ -918,12 +918,45 @@ body {
   cursor: pointer;
 }
 
-/* .input-checkbox {
+.input-checkbox {
   position: absolute;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-} */
+}
+
+.form-checkbox {
+  position: relative;
+}
+
+.icon-checkbox {
+  position: absolute;
+
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 0;
+  cursor: pointer;
+}
+
+.icon-checkt {
+  position: absolute;
+
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.input-checkbox:checked ~ .icon-checkt {
+  opacity: 1;
+}
+
+.input-checkbox:checked + .icon-checkbox {
+  opacity: 0;
+}
 
 .modal-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
